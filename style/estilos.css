@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Candal&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+/* header */
+header{
+    height: 100px;
+    background: rgb(16, 41, 109);
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#imagen{
+    width: 80px;
+    height: auto;
+}
+#logo{
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 200;
+
+}
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order:1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: aquamarine;
+}
+#check{
+    display: none;
+}
+/* banner */
+#banner{
+    padding: 0 50px;
+    background-image: url(/img/personas.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{ /* le da una capa de color a la imagen*/
+    content: '';
+    background: rgba(14, 33, 86, 0.378);
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.contenido-banner h3 span{
+    font-weight: 600;
+}
+/* Mision, Vision y valores */
+#mvv{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.fa-solid,
+.fa-regular{
+    font-size: 100px;
+    padding-bottom: 20px;
+}
+#mvv div{
+    padding: 40px;
+}
+#mvv h4{
+    color: rgb(22, 57, 151);
+    font-size: 30px;
+    font-family: "Candal", sans-serif;
+}
+#mvv p{
+    color: rgb(11, 27, 68);
+    font-size: 20px;
+    font-family: "Andika", sans-serif;
+}
+/* quienes somos y domotica */
+#nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.dioelectric-info {
+    width: 100%;
+    margin: 40px;
+}
+.img-dioelectric {
+    margin-right: 50px;
+    float: left;
+    width: 45%;
+}
+.img-dioelectric{
+    justify-content: left;
+    width: 300px;
+    height: auto;
+}
+.dioelectric-info h2{
+    float: left;
+    font-size: 40px;
+}
+.dioelectric-info p{
+    width: 60%;
+    float: left;
+    font-size: 20px;
+}
+#img-señora {
+    float: right;
+    width: 45%;
+    margin: 20px 20px;
+}
+#img-señora{
+    width: 450px;
+    height: auto;
+}
+#texto{
+    float: left;
+    width: 50%;
+}
+.domotica-info{
+    margin: 0 20px;
+    margin-top: 20px;
+}
+.domotica-info h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+.domotica-info p{
+    font-size: 20px;
+}
+/* responsive */
+@media(max-width: 768px){
+    /* header */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(14, 33, 86);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.5s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /* mision vision y valores */
+    #mvv{
+        flex-direction: column;
+    }
+    /* quienes somos*/
+    .dioelectric-info{
+        align-items: center;
+        margin: 0 40px
+    }
+    .img-dioelectric{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .dioelectric-info > div{
+        width: 100%;
+        order: 1;
+    }
+    .dioelectric-info h2{
+        width: 100%;
+        text-align: center;
+    }
+    .dioelectric-info p{
+        width: 100%;
+        text-align: center;
+    }
+    .domotica-info{
+        align-items: center;
+        margin: 20px 40px;
+    }
+    #texto{
+        order: 1;
+        width: 100%;
+    }
+    #texto h2{
+        text-align: center;
+        justify-content: center;
+    }
+    #texto p{
+        text-align: center;
+        justify-content: center;
+    }
+    #img-señora{
+        width: 100%;
+        order: -1;
+    }
+}
