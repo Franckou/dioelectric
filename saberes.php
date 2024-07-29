@@ -24,4 +24,5 @@
             </label>
         </nav>
     </header>
+    <?php echo  'Hola mundo'; ?>
 </body>
