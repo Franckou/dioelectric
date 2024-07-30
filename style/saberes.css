@@ -1,0 +1,15 @@
+html {
+    scroll-snap-type: y proximity;
+}
+section {
+    width: 100vh;
+    height: 80vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    background-color: aqua;
+    margin: 20px 0;
+}
+.lorem {
+    background-color: #fff;
+    height: auto;
+}
