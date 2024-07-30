@@ -37,6 +37,11 @@
     justify-content: center;
     text-align: center;
 }
+.mvv h2{
+    color: rgb(11, 27, 72);
+    font-size: 30px;
+    font-family: "Candal", sans-serif;
+}
 .fa-solid,
 .fa-regular{
     font-size: 100px;
