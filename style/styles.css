@@ -39,6 +39,7 @@ header{
 .flags__img {
     display: block;
     cursor: pointer;
+    border-radius: 10%;
 }
 /* menu */
 .menu a{
