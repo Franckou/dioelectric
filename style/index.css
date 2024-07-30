@@ -61,6 +61,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 50px;
+    background-image: linear-gradient(180deg, #fff , #d5d5d5);
 }
 .dioelectric-info {
     width: 100%;
