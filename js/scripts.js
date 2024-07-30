@@ -57,3 +57,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const floatButton = document.querySelector('.float-button');
+    const floatMenu = document.getElementById('float-menu');
+
+    floatButton.addEventListener('click', function() {
+        if (floatMenu.style.display === 'none' || floatMenu.style.display === '') {
+            floatMenu.style.display = 'flex';
+        } else {
+            floatMenu.style.display = 'none';
+        }
+    });
+
+    // Cerrar el menú cuando se haga clic fuera de él
+    document.addEventListener('click', function(event) {
+        if (!floatButton.contains(event.target) && !floatMenu.contains(event.target)) {
+            floatMenu.style.display = 'none';
+        }
+    });
+});

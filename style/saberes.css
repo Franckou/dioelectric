@@ -1,12 +1,63 @@
 section {
     width: 100vw;
     height: 80vw;
-    /* scroll-snap-align: start;
-    scroll-snap-stop: normal; */
     background-color: aqua;
     margin: 20px 0;
 }
-.lorem {
+/* Botón flotante */
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(14, 33, 86); /* Color anaranjado */
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.float-button:hover {
+    background-color: rgb(97, 135, 240);
+}
+
+.float-button i {
+    font-size: 24px;
+}
+
+/* Menú desplegable */
+.float-menu {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
     background-color: #fff;
-    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.float-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.float-menu a:hover {
+    background-color: rgb(97, 135, 240);
+    color: white;
+}
+
+.float-menu a:last-child {
+    border-bottom: none;
 }
