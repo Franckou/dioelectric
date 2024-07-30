@@ -2,7 +2,8 @@
     "menu":{
         "inicio": "Home",
         "sobre_nosotros": "About us",
-        "saberes": "Learnings"
+        "saberes": "Learnings",
+        "contacto": "contact"
     },
     "titulo":{
         "dioelectric": "<span>DIOELECTRIC:</span> THE FUTURE IN YOUR HOME"
