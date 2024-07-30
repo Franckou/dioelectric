@@ -1,7 +1,7 @@
 {
     "menu":{
         "inicio": "Home",
-        "sobre nosotros": "About us",
+        "sobre_nosotros": "About us",
         "saberes": "Learnings"
     },
     "titulo":{
@@ -19,12 +19,24 @@
         "vatit": "VALUES",
         "vatext": "As a company we have the values of KINDNESS, COMMUNICATION, RESPECT, PATIENCE and SINCERITY."
     },
-    "nosotros": {
+    "index-nosotros": {
         "quienes_somos": "Who are we...",
         "quienes_texto": "We are a company specialized in home automation and automation for homes and businesses, where security is our main priority. Our professional and committed team guarantees reliable and personalized solutions to protect what matters most to you. From access control to advanced surveillance systems, we are here to provide you with peace of mind and comfort, both at home and in your business."
     },
     "domotica":{
         "domo_titulo": "Simplify your life and Strengthen Security in your Home",
         "domo_text": "Home automation transforms homes into smart spaces, where everything from lighting to security is controlled with a touch on your mobile. Our systems include cameras, sensors and smart locks to strengthen security, while energy management reduces costs and environmental impact. In our company, we specialize in these solutions to make your home safer and more efficient."
+    },
+    "nosotros": {
+        "titulo": "DioElectric: <br> Innovation and Security in Every Corner of Your Home",
+        "nosotros-p": "At <strong>DioElectric</strong>, home automation is not just part of the <strong>future</strong>... it is the <strong>present</strong> we live in every day. With a team of four technology visionaries, we lead the transformation of homes and spaces into intelligent and secure environments. <br>behind our smart solutions.",
+        "alvaro": "Position: Director of Security and Protection Systems <br> Description: Designs and oversees the implementation of advanced security systems, ensuring the protection of our clients' homes and spaces.",
+        "franco": "Position: Human Resources Leader and Team Coach <br> Description: Responsible for managing human talent, fostering the personal and professional development of the team, and maintaining a positive and productive work environment.",
+        "mateo": "Position: Director of Innovation and Strategy <br> Description: Responsible for leading strategic and innovation initiatives, ensuring the company is always at the forefront of home automation technology.",
+        "tobias": "Position: Expert in Automation and Environment Adaptation <br> Description: Specialist in adapting and customizing automation solutions to perfectly fit the needs and preferences of each client.",
+        "equipo-h2": "Our Commitment to You",
+        "equipo-p1": "Our professional team is dedicated to transforming your home or business into a smart, safe, and efficient space. We understand your needs and offer customized home automation solutions that exceed your expectations.",
+        "equipo-p2": "With exceptional customer service and ongoing support, we guarantee your complete satisfaction. Trust us to bring your vision of an innovative and adaptive environment to life. Let us enhance your quality of life with cutting-edge technology.",
+        "equipo-p3": "Allow us to show you how our dedication and professionalism can transform your experience. Trust DioElectric to provide first-class service that truly makes a difference."
     }
 }

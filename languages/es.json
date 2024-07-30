@@ -19,12 +19,24 @@
         "vatit": "VALORES",
         "vatext": "Como empresa tenemos los valores de la AMABILIDAD, COMUNICACIÓN, RESPETO, PACIENCIA y SINCERIDAD."
     },
-    "nosotros": {
+    "index-nosotros": {
         "quienes_somos": "Quienes somos...",
         "quienes_texto": "Somos una empresa especializada en domótica y automatización para hogares y comercios, donde la seguridad es nuestra principal prioridad. Nuestro equipo profesional y comprometido garantiza soluciones confiables y personalizadas para proteger lo que más le importa. Desde el control de accesos hasta sistemas de vigilancia avanzados, estamos aquí para proporcionarle tranquilidad y comodidad, tanto en su hogar como en su negocio."
     },
     "domotica":{
         "domo_titulo": "Simplifica tu vida y Refuerza la Seguridad en tu Hogar",
         "domo_text": "La domótica transforma hogares en espacios inteligentes, donde desde la iluminación hasta la seguridad se controla con un toque en el móvil. Nuestros sistemas incluyen cámaras, sensores y cerraduras inteligentes para fortalecer la seguridad, mientras que la gestión energética reduce costos y el impacto ambiental. En nuestra empresa, nos especializamos en estas soluciones para hacer tu hogar más seguro y eficiente."
+    },
+    "nosotros": {
+        "titulo": "DioElectric: <br> Innovación y Seguridad en cada rincón de tu hogar",
+        "nosotros-p": "En <strong>DioElectric</strong>, la domótica no es solo parte del <strong>futuro</strong>... es el <strong>presente</strong> que vivimos cada día. Con un equipo de cuatro visionarios de la tecnología, lideramos la transformación de hogares y espacios en ambientes inteligentes y seguros. <br>detrás de nuestras soluciones inteligentes.",
+        "alvaro": "Cargo: Director de Seguridad y Sistemas de Protección <br> Descripción: Diseña y supervisa la implementación de sistemas de seguridad avanzados, garantizando la protección de los hogares y espacios de nuestros clientes.",
+        "franco": "Cargo: Líder de Recursos Humanos y Coach del Equipo <br> Descripción: Encargado de gestionar el talento humano, fomentar el desarrollo personal y profesional del equipo, y mantener un ambiente de trabajo positivo y productivo.",
+        "mateo": "Cargo: Director de Innovación y Estrategia <br> Descripción: Responsable de liderar las iniciativas estratégicas y de innovación, asegurando que la empresa esté siempre a la vanguardia de la tecnología domótica.",
+        "tobias": "Cargo: Experto en Automatización y Adaptación del Entorno <br> Descripción: Especialista en adaptar y personalizar las soluciones de automatización para que se ajusten perfectamente a las necesidades y preferencias de cada cliente.",
+        "equipo-h2": "Nuestro Compromiso con Usted",
+        "equipo-p1": "Nuestro equipo profesional se dedica a transformar su hogar o negocio en un espacio inteligente, seguro y eficiente. Entendemos sus necesidades y ofrecemos soluciones de domótica a medida que superan sus expectativas.",
+        "equipo-p2": "Con una atención al cliente excepcional y un soporte continuo, garantizamos su total satisfacción. Confíe en nosotros para hacer realidad su visión de un entorno innovador y adaptativo. Permítanos mejorar su calidad de vida con tecnología de vanguardia.",
+        "equipo-p3": "Permítanos demostrarle cómo nuestra dedicación y profesionalismo pueden transformar su experiencia. Confíe en DioElectric para recibir un servicio de primera clase que realmente hace la diferencia."
     }
 }
