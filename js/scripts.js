@@ -1,12 +1,12 @@
 const flagsElements = document.getElementById("flags");
 
-const changeLanguage = async language => {
+const changeLanguage = async (language) => {
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
-
-    console.log(texts)
+    console.log(texts);
 };
 
 flagsElements.addEventListener("click", (e) => {
-    changeLanguage(e.target.parentElement.language);
+    const language = e.target.dataset.language || e.target.parentElement.dataset.language;
+    changeLanguage(language);
 });
