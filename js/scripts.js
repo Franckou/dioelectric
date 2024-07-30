@@ -1,6 +1,6 @@
 const flagsElements = document.getElementById("flags");
 
-const textsToChange = document.querySelectorAll("[data-section");
+const textsToChange = document.querySelectorAll("[data-section]");
 
 const changeLanguage = async (language) => {
     const requestJson = await fetch(`./languages/${language}.json`);
