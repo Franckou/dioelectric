@@ -1,0 +1,30 @@
+{
+    "menu":{
+        "inicio": "Home",
+        "sobre nosotros": "About us",
+        "saberes": "Learnings"
+    },
+    "titulo":{
+        "dioelectric": "<span>DIOELECTRIC:</span> THE FUTURE IN YOUR HOME"
+    },
+    "mision":{
+        "mitit": "MISSION",
+        "mitext": "Provide cutting-edge solutions in home automation and automation for homes and businesses, putting security at the center of everything we do."
+    },
+    "vision":{
+        "vitit": "VISION",
+        "vitext": "Be recognized nationally and have three branches in each province of Argentina."
+    },
+    "valores":{
+        "vatit": "VALUES",
+        "vatext": "As a company we have the values of KINDNESS, COMMUNICATION, RESPECT, PATIENCE and SINCERITY."
+    },
+    "nosotros": {
+        "quienes_somos": "Who are we...",
+        "quienes_texto": "We are a company specialized in home automation and automation for homes and businesses, where security is our main priority. Our professional and committed team guarantees reliable and personalized solutions to protect what matters most to you. From access control to advanced surveillance systems, we are here to provide you with peace of mind and comfort, both at home and in your business."
+    },
+    "domotica":{
+        "domo_titulo": "Simplify your life and Strengthen Security in your Home",
+        "domo_text": "Home automation transforms homes into smart spaces, where everything from lighting to security is controlled with a touch on your mobile. Our systems include cameras, sensors and smart locks to strengthen security, while energy management reduces costs and environmental impact. In our company, we specialize in these solutions to make your home safer and more efficient."
+    }
+}

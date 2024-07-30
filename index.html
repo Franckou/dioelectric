@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/dioelectricv3.svg">
     <title>DioElectric</title>
@@ -18,9 +18,17 @@
             &#8801
         </label>
         <nav class="menu">
-            <a href="https://dioelectric.netlify.app/index.html">Inicio</a>
-            <a href="https://dioelectric.netlify.app/nosotros.html">Sobre nosotros</a>
-            <a href="https://dioelectric.netlify.app/saberes.html">Saberes</a>
+            <a href="https://dioelectric.netlify.app/index.html" data-section="menu" data-value="inicio">Inicio</a>
+            <a href="https://dioelectric.netlify.app/nosotros.html" data-section="menu" data-value="sobre_nosotros">Sobre nosotros</a>
+            <a href="https://dioelectric.netlify.app/saberes.html" data-section="menu" data-value="saberes">Saberes</a>
+            <div id="flags" class="flags">
+                <div class="flags__item" data-languages="es">
+                    <img src="/img/ar.svg" alt="">
+                </div>
+                <div class="flags__item" data-languages="en">
+                    <img src="/img/us.svg" alt="">
+                </div>
+            </div>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
@@ -28,43 +36,44 @@
     </header>
     <section id="banner">
         <div class="contenido-banner">
-            <h3><span>DIOELECTRIC:</span> EL FUTURO EN TU HOGAR</h3>
+            <h3 data-section="titulo" data-value="dioelectric"><span>DIOELECTRIC:</span> EL FUTURO EN TU HOGAR</h3>
         </div>
     </section>
     <section id="mvv">
         <div>
             <i class="fa-solid fa-bullseye"></i>
-            <h4>MISIÓN</h4>
-            <p>Brindar soluciones de vanguardia en domótica y automatización para hogares y comercios, poniendo la seguridad en el centro de todo lo que hacemos.</p>
+            <h4 data-section="mision" data-value="mitit">MISIÓN</h4>
+            <p data-section="mision" data-value="mitext">Brindar soluciones de vanguardia en domótica y automatización para hogares y comercios, poniendo la seguridad en el centro de todo lo que hacemos.</p>
         </div>
         <div>
             <i class="fa-regular fa-eye"></i>
-            <h4>VISIÓN</h4>
-            <p>Ser reconocidos a nivel nacional y contar con tres sucursales en cada provincia de Argentina.</p>
+            <h4 data-section="vision" data-value="vitit">VISIÓN</h4>
+            <p data-section="vision" data-value="vitext">Ser reconocidos a nivel nacional y contar con tres sucursales en cada provincia de Argentina.</p>
         </div>
         <div>
             <i class="fa-solid fa-scale-balanced"></i>
-            <h4>VALORES</h4>
-            <p>Como empresa tenemos los valores de la AMABILIDAD, COMUNICACIÓN, RESPETO, PACIENCIA y SINCERIDAD.</p>
+            <h4 data-section="valores" data-value="vatit">VALORES</h4>
+            <p data-section="valores" data-value="vatext">Como empresa tenemos los valores de la AMABILIDAD, COMUNICACIÓN, RESPETO, PACIENCIA y SINCERIDAD.</p>
         </div>
     </section>
     <section id="nosotros">
         <div class="dioelectric-info">
             <img class="img-dioelectric" src="/img/dioelectricv3.svg" alt="logo de la empresa">
             <div>
-                <h2>Quienes somos...</h2>
-                <p>Somos una empresa especializada en domótica y automatización para hogares y comercios, donde la seguridad es nuestra principal prioridad. Nuestro equipo profesional y comprometido garantiza soluciones confiables y personalizadas para proteger lo que más le importa. Desde el control de accesos hasta sistemas de vigilancia avanzados, estamos aquí para proporcionarle tranquilidad y comodidad, tanto en su hogar como en su negocio</p>
+                <h2 data-section="nosotros" data-value="quienes_somos">Quienes somos...</h2>
+                <p data-section="nosotros" data-value="quienes_texto">Somos una empresa especializada en domótica y automatización para hogares y comercios, donde la seguridad es nuestra principal prioridad. Nuestro equipo profesional y comprometido garantiza soluciones confiables y personalizadas para proteger lo que más le importa. Desde el control de accesos hasta sistemas de vigilancia avanzados, estamos aquí para proporcionarle tranquilidad y comodidad, tanto en su hogar como en su negocio.</p>
             </div>
         </div>
         <div class="domotica-info">
             <div id="texto">
-                <h2>Simplifica tu vida y Refuerza la Seguridad en tu Hogar</h2>
-                <p>La domótica transforma hogares en espacios inteligentes, donde desde la iluminación hasta la seguridad se controla con un toque en el móvil. Nuestros sistemas incluyen cámaras, sensores y cerraduras inteligentes para fortalecer la seguridad, mientras que la gestión energética reduce costos y el impacto ambiental. En nuestra empresa, nos especializamos en estas soluciones para hacer tu hogar más seguro y eficiente.</p>
+                <h2 data-section="domotica" data-value="domo_titulo">Simplifica tu vida y Refuerza la Seguridad en tu Hogar</h2>
+                <p data-section="domotica" data-value="domo_text">La domótica transforma hogares en espacios inteligentes, donde desde la iluminación hasta la seguridad se controla con un toque en el móvil. Nuestros sistemas incluyen cámaras, sensores y cerraduras inteligentes para fortalecer la seguridad, mientras que la gestión energética reduce costos y el impacto ambiental. En nuestra empresa, nos especializamos en estas soluciones para hacer tu hogar más seguro y eficiente.</p>
             </div>
-            <img id="img-señora" src="/img/señora.jpg" alt="imagen de referencia de domotica">
+            <img id="img-mujer" src="/img/mujer.jpg" alt="imagen de referencia de domotica">
             <div>
             </div>
         </div>
     </section>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

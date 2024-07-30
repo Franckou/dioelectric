@@ -26,6 +26,21 @@ header{
     font-size: 200;
 
 }
+/* banderas */
+.flags {
+    width: 75px;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.flags__item {
+    width: 30px;
+}
+.flags__img {
+    display: block;
+    cursor: pointer;
+}
+/* menu */
 .menu a{
     color: white;
     text-transform: uppercase;

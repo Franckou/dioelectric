@@ -1,0 +1,30 @@
+{
+    "menu":{
+        "inicio": "Inicio",
+        "sobre_nosotros": "Sobre Nosotros",
+        "saberes": "Aprendizajes"
+    },
+    "titulo":{
+        "dioelectric": "<span>DIOELECTRIC:</span> EL FUTURO EN TU HOGAR"
+    },
+    "mision":{
+        "mitit": "Mision",
+        "mitext": "Brindar soluciones de vanguardia en domótica y automatización para hogares y comercios, poniendo la seguridad en el centro de todo lo que hacemos."
+    },
+    "vision":{
+        "vitit": "VISIÓN",
+        "vitext": "Ser reconocidos a nivel nacional y contar con tres sucursales en cada provincia de Argentina."
+    },
+    "valores":{
+        "vatit": "VALORES",
+        "vatext": "Como empresa tenemos los valores de la AMABILIDAD, COMUNICACIÓN, RESPETO, PACIENCIA y SINCERIDAD."
+    },
+    "nosotros": {
+        "quienes_somos": "Quienes somos...",
+        "quienes_texto": "Somos una empresa especializada en domótica y automatización para hogares y comercios, donde la seguridad es nuestra principal prioridad. Nuestro equipo profesional y comprometido garantiza soluciones confiables y personalizadas para proteger lo que más le importa. Desde el control de accesos hasta sistemas de vigilancia avanzados, estamos aquí para proporcionarle tranquilidad y comodidad, tanto en su hogar como en su negocio."
+    },
+    "domotica":{
+        "domo_titulo": "Simplifica tu vida y Refuerza la Seguridad en tu Hogar",
+        "domo_text": "La domótica transforma hogares en espacios inteligentes, donde desde la iluminación hasta la seguridad se controla con un toque en el móvil. Nuestros sistemas incluyen cámaras, sensores y cerraduras inteligentes para fortalecer la seguridad, mientras que la gestión energética reduce costos y el impacto ambiental. En nuestra empresa, nos especializamos en estas soluciones para hacer tu hogar más seguro y eficiente."
+    }
+}
