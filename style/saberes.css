@@ -1,10 +1,11 @@
 /* Banner general */
 .banner {
     height: 40vw;
+    align-items: center;
+    text-align: center;
     background-image: url(/img/estudiantes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     margin-bottom: 15px;
 }
 .banner::before {
@@ -37,6 +38,7 @@
     margin-bottom: 30px;
 }
 .banner-materias {
+    background-attachment: fixed;
     height: 25vw;
     background-size: cover;
     background-position: center;
@@ -64,29 +66,38 @@
     text-align: center;
 }
 .contenido-materias {
-    position: relative;
-    max-height: 150px;
+    max-height: 200px;
     overflow: hidden;
-    padding: 20px;
-    background: #fff;
-    transition: max-height 0.5s ease-in-out;
+    position: relative;
+    transition: 0.5s ease-in-out;
 }
+.contenido-materias.expanded {
+    max-height: none;
+}
+
 .texto-materias {
-    margin: 0;
-    font-size: 16px;
+    margin: 20px;
+    font-size: 20px;
     line-height: 1.6;
 }
 .boton-leer-mas {
     position: absolute;
-    bottom: 0;
-    right: 20px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    background-color: #007BFF; /* Ajusta el color de fondo */
+    background-color: #459fff; /* Ajusta el color de fondo */
     color: white; /* Ajusta el color del texto */
     border-radius: 5px;
+    z-index: 1;
     display: none;
+    transition: bottom 0.4s;
+}
+.contenido-materias.expanded .boton-leer-mas {
+    bottom: -20px;
+    margin: 10px;
 }
 
 /* Degradado al final del contenido */

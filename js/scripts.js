@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
+
     // Código para la detección del idioma del navegador y carga del archivo JSON
     const userLanguage = navigator.language || navigator.userLanguage;
     const languageCode = userLanguage.split('-')[0]; // Obtiene el código del idioma, por ejemplo, 'es' de 'es-ES'
@@ -97,19 +98,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         const content = section.querySelector('.contenido-materias');
         const button = section.querySelector('.boton-leer-mas');
         const text = content.querySelector('.texto-materias');
-
+        
+        // Verifica si el contenido excede la altura máxima
         if (text.scrollHeight > content.clientHeight) {
             button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
         }
 
         button.addEventListener('click', () => {
             if (content.classList.contains('expanded')) {
                 content.classList.remove('expanded');
-                content.style.maxHeight = '150px';
+                content.style.maxHeight = 'auto';
                 button.textContent = 'Leer más';
             } else {
                 content.classList.add('expanded');
-                content.style.maxHeight = text.scrollHeight + 'px';
+                content.style.maxHeight = text.scrollHeight;
                 button.textContent = 'Leer menos';
             }
         });
