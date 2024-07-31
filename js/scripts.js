@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
+//menu desplegable saberes.html
 document.addEventListener('DOMContentLoaded', function() {
     const floatButton = document.querySelector('.float-button');
     const floatMenu = document.getElementById('float-menu');
@@ -87,5 +88,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 300); // Duración de la animación
             }
         }
+    });
+});
+
+//boton "leer mas"
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.materias');
+
+    sections.forEach(section => {
+        const content = section.querySelector('.contenido-materias');
+        const button = section.querySelector('.boton-leer-mas');
+        const text = content.querySelector('.texto-materias');
+
+        if (text.scrollHeight > content.clientHeight) {
+            button.style.display = 'block';
+        }
+
+        button.addEventListener('click', () => {
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                content.style.maxHeight = '150px';
+                button.textContent = 'Leer más';
+            } else {
+                content.classList.add('expanded');
+                content.style.maxHeight = text.scrollHeight + 'px';
+                button.textContent = 'Leer menos';
+            }
+        });
     });
 });

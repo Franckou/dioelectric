@@ -1,15 +1,11 @@
-.materias {
-    width: 100%;
-    height: 80vw;
-    background-color: aqua;
-    margin: 20px 0;
-}
+/* Banner general */
 .banner {
     height: 40vw;
     background-image: url(/img/estudiantes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 15px;
 }
 .banner::before {
     content: '';
@@ -27,21 +23,89 @@
     flex-direction: column;
     justify-content: center;
 }
-.contenido-banner-saberes h3{
+.contenido-banner-saberes h3 {
     font-size: 50px;
     font-weight: 400;
     padding: 10px;
     text-align: center;
 }
 
+/* Sección de materias */
+.materias {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.banner-materias {
+    height: 25vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner-materias::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.banner-materias h3 {
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+.contenido-materias {
+    position: relative;
+    max-height: 150px;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    transition: max-height 0.5s ease-in-out;
+}
+.texto-materias {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.boton-leer-mas {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF; /* Ajusta el color de fondo */
+    color: white; /* Ajusta el color del texto */
+    border-radius: 5px;
+    display: none;
+}
 
+/* Degradado al final del contenido */
+.contenido-materias::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, white);
+}
 
 /* Botón flotante */
 .float-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(14, 33, 86); 
+    background-color: #f90; /* Color anaranjado */
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -56,12 +120,13 @@
 }
 
 .float-button:hover {
-    background-color: rgb(97, 135, 240);
+    background-color: #ff6;
 }
 
 .float-button i {
     font-size: 24px;
 }
+
 /* Animaciones para el menú */
 @keyframes slideIn {
     from {
@@ -85,7 +150,7 @@
     }
 }
 
-/* Estados iniciales y finales */
+/* Menú desplegable */
 .float-menu {
     position: fixed;
     bottom: 90px;
@@ -97,9 +162,6 @@
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 999;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s, transform 0.3s;
 }
 
 /* Clase para animar la entrada */
@@ -107,12 +169,12 @@
     display: flex;
     opacity: 1;
     transform: translateY(0);
-    animation: slideIn 0.5s forwards;
+    animation: slideIn 0.3s forwards;
 }
 
 /* Clase para animar la salida */
 .float-menu.close {
-    animation: slideOut 0.5s forwards;
+    animation: slideOut 0.3s forwards;
     display: flex;
 }
 
@@ -125,18 +187,10 @@
 }
 
 .float-menu a:hover {
-    background-color: rgb(97, 135, 240);
+    background-color: #f90;
     color: white;
 }
 
 .float-menu a:last-child {
     border-bottom: none;
-}
-@media(max-width:768px){
-    .banner{
-        height: 70vw;
-    }
-    .banner::before {
-        height: 70vw;
-    }
 }
