@@ -105,7 +105,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #f90; /* Color anaranjado */
+    background-color: rgb(16, 41, 109);
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -120,7 +120,7 @@
 }
 
 .float-button:hover {
-    background-color: #ff6;
+    background-color: rgb(45, 98, 245);
 }
 
 .float-button i {
@@ -187,7 +187,7 @@
 }
 
 .float-menu a:hover {
-    background-color: #f90;
+    background-color: rgb(45, 98, 245);
     color: white;
 }
 

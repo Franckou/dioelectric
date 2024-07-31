@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    // Detectar el idioma del navegador
+    // Código para la detección del idioma del navegador y carga del archivo JSON
     const userLanguage = navigator.language || navigator.userLanguage;
     const languageCode = userLanguage.split('-')[0]; // Obtiene el código del idioma, por ejemplo, 'es' de 'es-ES'
     
@@ -56,43 +56,41 @@ document.addEventListener('DOMContentLoaded', async () => {
                 .catch(error => console.error('Error loading new language file:', error));
         }
     });
-});
 
-//menu desplegable saberes.html
-document.addEventListener('DOMContentLoaded', function() {
+    // Código para el menú flotante
     const floatButton = document.querySelector('.float-button');
     const floatMenu = document.getElementById('float-menu');
 
-    floatButton.addEventListener('click', function() {
-        if (floatMenu.classList.contains('open')) {
-            floatMenu.classList.remove('open');
-            floatMenu.classList.add('close');
-            setTimeout(() => {
-                floatMenu.style.display = 'none';
-            }, 300); // Duración de la animación
-        } else {
-            floatMenu.classList.remove('close');
-            floatMenu.classList.add('open');
-            floatMenu.style.display = 'flex';
-        }
-    });
-
-    // Cerrar el menú cuando se haga clic fuera de él
-    document.addEventListener('click', function(event) {
-        if (!floatButton.contains(event.target) && !floatMenu.contains(event.target)) {
+    if (floatButton && floatMenu) {
+        floatButton.addEventListener('click', function() {
             if (floatMenu.classList.contains('open')) {
                 floatMenu.classList.remove('open');
                 floatMenu.classList.add('close');
                 setTimeout(() => {
                     floatMenu.style.display = 'none';
                 }, 300); // Duración de la animación
+            } else {
+                floatMenu.classList.remove('close');
+                floatMenu.classList.add('open');
+                floatMenu.style.display = 'flex';
             }
-        }
-    });
-});
+        });
 
-//boton "leer mas"
-document.addEventListener('DOMContentLoaded', function () {
+        // Cerrar el menú cuando se haga clic fuera de él
+        document.addEventListener('click', function(event) {
+            if (!floatButton.contains(event.target) && !floatMenu.contains(event.target)) {
+                if (floatMenu.classList.contains('open')) {
+                    floatMenu.classList.remove('open');
+                    floatMenu.classList.add('close');
+                    setTimeout(() => {
+                        floatMenu.style.display = 'none';
+                    }, 300); // Duración de la animación
+                }
+            }
+        });
+    }
+
+    // Código para el botón "Leer más"
     const sections = document.querySelectorAll('.materias');
 
     sections.forEach(section => {
