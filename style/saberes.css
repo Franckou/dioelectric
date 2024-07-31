@@ -1,15 +1,47 @@
-section {
-    width: 100vw;
+.materias {
+    width: 100%;
     height: 80vw;
     background-color: aqua;
     margin: 20px 0;
 }
+.banner {
+    height: 40vw;
+    background-image: url(/img/estudiantes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner::before {
+    content: '';
+    background: rgba(3, 13, 41, 0.889);
+    position: absolute;
+    width: 100%;
+    height: 40vw;
+    left: 0;
+}
+.contenido-banner-saberes {
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner-saberes h3{
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
 /* Botón flotante */
 .float-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(14, 33, 86); /* Color anaranjado */
+    background-color: rgb(14, 33, 86); 
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -30,8 +62,30 @@ section {
 .float-button i {
     font-size: 24px;
 }
+/* Animaciones para el menú */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-/* Menú desplegable */
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+/* Estados iniciales y finales */
 .float-menu {
     position: fixed;
     bottom: 90px;
@@ -43,6 +97,23 @@ section {
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Clase para animar la entrada */
+.float-menu.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 0.5s forwards;
+}
+
+/* Clase para animar la salida */
+.float-menu.close {
+    animation: slideOut 0.5s forwards;
+    display: flex;
 }
 
 .float-menu a {
@@ -60,4 +131,12 @@ section {
 
 .float-menu a:last-child {
     border-bottom: none;
+}
+@media(max-width:768px){
+    .banner{
+        height: 70vw;
+    }
+    .banner::before {
+        height: 70vw;
+    }
 }

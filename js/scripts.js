@@ -63,17 +63,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const floatMenu = document.getElementById('float-menu');
 
     floatButton.addEventListener('click', function() {
-        if (floatMenu.style.display === 'none' || floatMenu.style.display === '') {
-            floatMenu.style.display = 'flex';
+        if (floatMenu.classList.contains('open')) {
+            floatMenu.classList.remove('open');
+            floatMenu.classList.add('close');
+            setTimeout(() => {
+                floatMenu.style.display = 'none';
+            }, 300); // Duración de la animación
         } else {
-            floatMenu.style.display = 'none';
+            floatMenu.classList.remove('close');
+            floatMenu.classList.add('open');
+            floatMenu.style.display = 'flex';
         }
     });
 
     // Cerrar el menú cuando se haga clic fuera de él
     document.addEventListener('click', function(event) {
         if (!floatButton.contains(event.target) && !floatMenu.contains(event.target)) {
-            floatMenu.style.display = 'none';
+            if (floatMenu.classList.contains('open')) {
+                floatMenu.classList.remove('open');
+                floatMenu.classList.add('close');
+                setTimeout(() => {
+                    floatMenu.style.display = 'none';
+                }, 300); // Duración de la animación
+            }
         }
     });
 });
