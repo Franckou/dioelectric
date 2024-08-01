@@ -72,6 +72,7 @@
     transition: 0.5s ease-in-out;
 }
 .contenido-materias.expanded {
+    padding-bottom: 40px;
     max-height: none;
 }
 
@@ -95,9 +96,9 @@
     transition: bottom 0.4s;
     z-index: 1;
 }
-/* .contenido-materias.expanded .boton-leer-mas {
-    bottom: -20px;
-} */
+.contenido-materias.expanded .boton-leer-mas {
+    bottom: 0px;
+}
 /* Degradado al final del contenido */
 .contenido-materias::after {
     content: "";
@@ -162,7 +163,6 @@
 
 /* Menú desplegable */
 .float-menu {
-    right: 100%;
     position: fixed;
     bottom: 90px;
     right: 20px;
@@ -204,4 +204,11 @@
 
 .float-menu a:last-child {
     border-bottom: none;
+}
+
+@media (max-width: 400px){
+    .contenido-banner-saberes h3,
+    .banner-materias h3{
+        font-size: 30px;
+    }
 }

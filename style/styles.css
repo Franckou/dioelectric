@@ -4,6 +4,10 @@
 html {
     scroll-behavior: smooth;
 }
+body, html {
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -174,5 +178,18 @@ color: #fff;
     }
     #check:checked ~ .menu{
         right: 0;
+    }
+}
+
+/* Media Queries para móviles */
+@media (max-width: 600px) {
+    .float-button {
+        width: 40px; /* Tamaño más pequeño para móviles */
+        height: 40px;
+    }
+
+    .float-menu {
+        right: 10px; /* Ajusta la posición para móviles */
+        max-width: calc(100% - 20px); /* Ajusta el ancho del menú */
     }
 }
