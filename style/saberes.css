@@ -111,6 +111,7 @@
 
 /* Botón flotante */
 .float-button {
+    right: 100%;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -124,7 +125,7 @@
     align-items: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    z-index: 1;
     transition: background-color 0.3s;
 }
 
@@ -161,6 +162,7 @@
 
 /* Menú desplegable */
 .float-menu {
+    right: 100%;
     position: fixed;
     bottom: 90px;
     right: 20px;
@@ -170,7 +172,7 @@
     display: none;
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 999;
+    z-index: 1;
 }
 
 /* Clase para animar la entrada */
