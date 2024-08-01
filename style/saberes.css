@@ -88,18 +88,17 @@
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    background-color: #459fff; /* Ajusta el color de fondo */
-    color: white; /* Ajusta el color del texto */
+    background-color: #459fff;
+    color: white;
     border-radius: 5px;
-    z-index: 1;
+    z-index: 100;
     display: none;
     transition: bottom 0.4s;
 }
 .contenido-materias.expanded .boton-leer-mas {
     bottom: -20px;
-    margin: 10px;
+    z-index: 100;
 }
-
 /* Degradado al final del contenido */
 .contenido-materias::after {
     content: "";
