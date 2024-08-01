@@ -91,14 +91,13 @@
     background-color: #459fff;
     color: white;
     border-radius: 5px;
-    z-index: 100;
     display: none;
     transition: bottom 0.4s;
+    z-index: 1;
 }
-.contenido-materias.expanded .boton-leer-mas {
+/* .contenido-materias.expanded .boton-leer-mas {
     bottom: -20px;
-    z-index: 100;
-}
+} */
 /* Degradado al final del contenido */
 .contenido-materias::after {
     content: "";
