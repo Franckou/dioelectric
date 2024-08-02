@@ -70,6 +70,7 @@
     overflow: hidden;
     position: relative;
     transition: 0.5s ease-in-out;
+    background-color: #e0e0e0;
 }
 .contenido-materias.expanded {
     padding-bottom: 40px;
@@ -77,9 +78,12 @@
 }
 
 .texto-materias {
-    margin: 20px;
+    margin: 10px 40px;
     font-size: 20px;
     line-height: 1.6;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
 }
 .boton-leer-mas {
     position: absolute;
@@ -204,6 +208,12 @@
 
 .float-menu a:last-child {
     border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    .banner-materias {
+        height: 50vw;
+    }
 }
 
 @media (max-width: 400px){
