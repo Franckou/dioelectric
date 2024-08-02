@@ -216,7 +216,7 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 425px){
     .contenido-banner-saberes h3,
     .banner-materias h3{
         font-size: 30px;
