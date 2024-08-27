@@ -68,6 +68,30 @@ body{
     margin-bottom: 20px;
 }
 
+.contacto{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+}
+.contacto h2{
+    font-size: 40px;
+    color: rgb(11, 27, 68);
+}
+.contacto a{
+    color: rgb(0, 42, 150);
+    padding: 30px 0;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Andika", sans-serif;
+    transition: 0.4s;
+}
+
+.contacto a:hover{
+    color: rgb(17, 85, 255);
+}
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .equipo {
