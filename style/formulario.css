@@ -1,8 +1,6 @@
-
-
 /* From Uiverse.io by gharsh11032000 */ 
-.form-container {
-    width: 400px;
+.form-container {        
+    width: 30vw;
     background: linear-gradient(#fff, #fff) padding-box,
                 linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
@@ -15,82 +13,254 @@
     gap: 20px;
     box-sizing: border-box;
     border-radius: 16px;
-  }
+}
   
 .form-container{
     margin: auto 0;
     margin: 30px 40px;
-  }
-  
-#contrato{
-    min-width: 800px;
-  }
+}
 
-  .form-container button:active {
+.form-container button:active {
     scale: 0.95;
-  }
-  
-  .form-container .form {
+}
+
+.form-container .form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .form-container .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    
-    .form-container .form-group {
-        color: #40c9ff;
-    }
+}
 
-    .form-container .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      color: #717171;
-      font-weight: 600;
-      font-size: 12px;
-    }
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 
-  .form-container .form-group input {
-    width: 90%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    color: #000000;
-    font-family: inherit;
-    background-color: transparent;
-    border: 1px solid #414141;
-  }
-  
-  .form-container .form-group textarea {
-    width: 90%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    resize: none;
-    color: #000000;
-    height: 96px;
-    border: 1px solid #414141;
-    background-color: transparent;
-    font-family: inherit;
-  }
-  
-  .form-container .form-group input::placeholder {
-    opacity: 0.5;
-  }
-  
-  .form-container .form-group input:focus {
+.form-container .form-group {
+    color: #40c9ff;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-container .form-group input {
+width: 90%;
+padding: 12px 16px;
+border-radius: 8px;
+color: #000000;
+font-family: inherit;
+background-color: transparent;
+border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+width: 90%;
+padding: 12px 16px;
+border-radius: 8px;
+resize: none;
+color: #000000;
+height: 96px;
+border: 1px solid #414141;
+background-color: transparent;
+font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+outline: none;
+border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+outline: none;
+border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+display: flex;
+align-items: flex-start;
+justify-content: center;
+align-self: flex-start;
+font-family: inherit;
+color: #383838;
+font-weight: 600;
+width: 40%;
+background: #f1f1f1;
+border: 1px solid #c8c8c8;
+padding: 12px 16px;
+font-size: inherit;
+gap: 8px;
+margin-top: 8px;
+cursor: pointer;
+border-radius: 6px;
+transition: 0.4s;
+}
+
+.form-container .form-submit-btn:hover {
+color: #c3c3c3;
+background-color: #494949;
+border-color: #111111;
+}
+
+/* formulario de empleo */
+.formu-container {
+width: 57vw;
+background: linear-gradient(#fff, #fff) padding-box,
+            linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+border: 2px solid transparent;
+padding: 32px 24px;
+font-size: 14px;
+font-family: inherit;
+color: white;
+display: inline-block;
+flex-direction: column;
+gap: 20px;
+box-sizing: border-box;
+border-radius: 16px;
+}
+
+.formu-container{
+margin: auto 0;
+margin: 30px 40px;
+}
+
+.formu-container button:active {
+    scale: 0.95;
+}
+
+.formu-container .formu {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.formu-container .formu {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.formu-group h2{
+    align-items: center;
+    text-align: center;
+}
+.form-container .formu-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.formu-container .formu-group {
+    color: #40c9ff;
+}
+
+/* .formu-container .formu-group .telefono, .email input{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}  */
+
+.formu-container .formu-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.formu-container .formu-group input {
+width: 90%;
+padding: 12px 16px;
+border-radius: 8px;
+color: #000000;
+font-family: inherit;
+background-color: transparent;
+border: 1px solid #414141;
+}
+
+.formu-container .formu-group textarea {
+width: 90%;
+padding: 12px 16px;
+border-radius: 8px;
+resize: none;
+color: #000000;
+height: 96px;
+border: 1px solid #414141;
+font-family: inherit;
+}
+
+.formu-container .formu-group input::placeholder {
+opacity: 0.5;
+}
+
+.formu-container .formu-group input:focus {
+outline: none;
+border-color: #e81cff;
+}
+
+.formu-group .tabla-educacion input{
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.file-upload-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file-upload-label {
+    margin: auto;
+    width: 20vw;
+}
+.file-upload-label input {
+    display: none;
+}
+.file-upload-label svg {
+    height: 50px;
+    fill: rgb(82, 82, 82);
+    margin-bottom: 20px;
+}
+.file-upload-label {
+    cursor: pointer;
+    background: linear-gradient(#ececec, #d2d2d2) padding-box;
+    padding: 30px 70px;
+    border-radius: 40px;
+    border: 2px dashed rgb(82, 82, 82);
+}
+.file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.browse-button {
+    background-color: rgb(82, 82, 82);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+}
+.browse-button:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.formu-container .formu-group textarea:focus {
     outline: none;
     border-color: #e81cff;
-  }
-  
-  .form-container .form-group textarea:focus {
-    outline: none;
-    border-color: #e81cff;
-  }
-  
-  .form-container .form-submit-btn {
+}
+
+.formu-container .form-submit-btn {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -108,14 +278,26 @@
     cursor: pointer;
     border-radius: 6px;
     transition: 0.4s;
-  }
-  
-  .form-container .form-submit-btn:hover {
+}
+
+.formu-container .form-submit-btn:hover {
     color: #c3c3c3;
     background-color: #494949;
     border-color: #111111;
-  }
-  
-  
-  
-  
+}
+
+/* media query */
+@media screen and (max-width: 720px){
+    .form-container, .formu-container{
+        width: 80vw;
+    }
+    .formu-container .formu-group .tabla-educacion th{
+        font-size: 12px;
+        color: rgb(7, 159, 224);
+
+    }
+    .formu-container .formu-group .tabla-educacion input{
+        width: 50%;
+        
+    }
+}
