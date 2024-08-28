@@ -1,5 +1,19 @@
-/* From Uiverse.io by gharsh11032000 */ 
-.form-container {        
+/* From Uiverse.io by gharsh11032000 */
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre los formularios */
+    padding: 20px;
+}
+
+.form-container,
+.formu-container {
+    width: 45%; /* Ajusta el tamaño para que ocupen el espacio deseado */
+    margin: 0 40px;
+}
+
+.form-container {
     width: 30vw;
     background: linear-gradient(#fff, #fff) padding-box,
                 linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
@@ -8,15 +22,15 @@
     font-size: 14px;
     font-family: inherit;
     color: white;
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     gap: 20px;
     box-sizing: border-box;
     border-radius: 16px;
 }
-  
+
 .form-container{
-    margin: auto 0;
+    margin: auto;
     margin: 30px 40px;
 }
 
@@ -112,24 +126,19 @@ border-color: #111111;
 
 /* formulario de empleo */
 .formu-container {
-width: 57vw;
-background: linear-gradient(#fff, #fff) padding-box,
-            linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
-border: 2px solid transparent;
-padding: 32px 24px;
-font-size: 14px;
-font-family: inherit;
-color: white;
-display: inline-block;
-flex-direction: column;
-gap: 20px;
-box-sizing: border-box;
-border-radius: 16px;
-}
-
-.formu-container{
-margin: auto 0;
-margin: 30px 40px;
+    width: 60vw;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
 }
 
 .formu-container button:active {
@@ -137,22 +146,16 @@ margin: 30px 40px;
 }
 
 .formu-container .formu {
-display: flex;
-flex-direction: column;
-gap: 20px;
-}
-
-.formu-container .formu {
-display: flex;
-flex-direction: column;
-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .formu-group h2{
     align-items: center;
     text-align: center;
 }
-.form-container .formu-group {
+.formu-container .formu-group {
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -161,12 +164,6 @@ gap: 20px;
 .formu-container .formu-group {
     color: #40c9ff;
 }
-
-/* .formu-container .formu-group .telefono, .email input{
-    position: relative;
-    display: inline-block;
-    width: 50%;
-}  */
 
 .formu-container .formu-group label {
     display: block;
@@ -177,33 +174,33 @@ gap: 20px;
 }
 
 .formu-container .formu-group input {
-width: 90%;
-padding: 12px 16px;
-border-radius: 8px;
-color: #000000;
-font-family: inherit;
-background-color: transparent;
-border: 1px solid #414141;
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #000000;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
 }
 
 .formu-container .formu-group textarea {
-width: 90%;
-padding: 12px 16px;
-border-radius: 8px;
-resize: none;
-color: #000000;
-height: 96px;
-border: 1px solid #414141;
-font-family: inherit;
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #000000;
+    height: 96px;
+    border: 1px solid #414141;
+    font-family: inherit;
 }
 
 .formu-container .formu-group input::placeholder {
-opacity: 0.5;
+    opacity: 0.5;
 }
 
 .formu-container .formu-group input:focus {
-outline: none;
-border-color: #e81cff;
+    outline: none;
+    border-color: #e81cff;
 }
 
 .formu-group .tabla-educacion input{
@@ -212,7 +209,7 @@ border-color: #e81cff;
     width: 70%;
 }
 
-/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vinodjangid07 */
 .file-upload-form {
     display: flex;
     align-items: center;
@@ -275,6 +272,7 @@ border-color: #e81cff;
     font-size: inherit;
     gap: 8px;
     margin-top: 8px;
+    margin-bottom: 10px;
     cursor: pointer;
     border-radius: 6px;
     transition: 0.4s;
@@ -287,9 +285,12 @@ border-color: #e81cff;
 }
 
 /* media query */
-@media screen and (max-width: 720px){
+@media screen and (max-width: 800px){
     .form-container, .formu-container{
+        flex-direction: column;
+        flex-wrap: wrap;
         width: 80vw;
+        align-items: center;
     }
     .formu-container .formu-group .tabla-educacion th{
         font-size: 12px;
@@ -298,6 +299,14 @@ border-color: #e81cff;
     }
     .formu-container .formu-group .tabla-educacion input{
         width: 50%;
-        
+
+    }    .form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container,
+    .formu-container {
+        width: 100%; /* Formularios ocupan el 100% del ancho en pantallas pequeñas */
     }
 }
