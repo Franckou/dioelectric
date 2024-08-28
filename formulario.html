@@ -41,11 +41,11 @@
                 <h2 data-section="formulario" data-value="titulo-comuniquese">Comuniquese con nosotros</h2>
             </div>
               <div class="form-group">
-                <label data-section="formulario" data-value="nombre" for="nombre">Nombre propio / Nombre de su compañía</label>
+                <label data-section="formulario" data-value="nombre-prop" for="nombre">Nombre propio / Nombre de su compañía</label>
                 <input type="text" id="nombre" name="nombre" required="">
               </div>
               <div class="form-group">
-                <label data-section="formulario" data-value="contacto" for="contacto">Ingrese método de contacto</label>
+                <label data-section="formulario" data-value="contacto" for="contacto">A dónde nos contactamos con usted?</label>
                 <input type="text" id="contacto" name="contacto" required="">
               </div>
               <div class="form-group">
@@ -62,77 +62,70 @@
                   </div>
                   <div class="formu-group">
                     <h3 data-section="formulario" data-value="informacion-personal">Información personal</h3>
-                    <label for="nombre">Nombre completo</label>
+                    <label data-section="formulario" data-value="nombre-comp" for="nombre">Nombre Completo</label>
                     <input type="text" required="">
                   </div>
                   <div class="formu-group">
-                    <label for="email">Email</label>
+                    <label data-section="formulario" data-value="mail" for="email">Email</label>
                     <input class="email" type="text" required="">
                   </div>
                   <div class="formu-group">
-                    <label for="telfono">Teléfono</label>
+                    <label data-section="formulario" data-value="telefono" for="telfono">Teléfono</label>
                     <input class="telefono" type="number" required="">
                   </div>
                   <div class="formu-group">
-                    <label for="casa">Dirección de domicilio</label>
+                    <label data-section="formulario" data-value="casa" for="casa">Dirección de domicilio</label>
                     <input type="text" required="">
                   </div>
                     <div class="formu-group">
-                      <label for="ciudad">ciudad</label>
+                      <label data-section="formulario" data-value="ciuadad" for="ciudad">ciudad</label>
                       <input type="text" required="">
                     </div>
                     <div class="formu-group">
-                      <label for="provincia">provincia</label>
+                      <label data-section="formulario" data-value="provincia" for="provincia">provincia</label>
                       <input type="text" required="">
                     </div>
                   <div class="formu-group">
-                    <label for="codigo-postal">Codigo Postal</label>
+                    <label data-section="formulario" data-value="codigo-p" for="codigo-postal">Codigo Postal</label>
                     <input type="text" required="">
                   </div>
                   <div class="formu-group">
-                    <label for="area">Area a postulación</label>
+                    <label data-section="formulario" data-value="area" for="area">Area a postulación</label>
                     <input type="text" required="">
                   </div>
                   <div class="formu-group">
-                    <label for="nos-conoce">Cómo nos conocío?</label>
+                    <label data-section="formulario" data-value="nos-conoce" for="nos-conoce">Cómo nos conocío?</label>
                     <textarea name="nos-conoce" cols="10" rows="50"></textarea>
                   </div>
                   <div class="formu-group">
-                    <h3>Educación</h3>
+                    <h3 data-section="formulario" data-value="educaion">Educación</h3>
                   </div>
                   <div class="formu-group">
                     <table class="tabla-educacion">
                       <thead>
                         <tr>
-                          <th>Tipo de escuela</th>
-                          <th>Nombre y dirección</th>
-                          <th>Especialidad</th>
-                          <th>Años cursados</th>
-                          <th>Se graduó aquí?</th>
+                          <th data-section="formulario" data-value="escuela">Tipo de escuela</th>
+                          <th data-section="formulario" data-value="nombre-dir">Nombre y dirección</th>
+                          <th data-section="formulario" data-value="especialidad">Especialidad</th>
+                          <th data-section="formulario" data-value="cursado">Años cursados</th>
+                          <th data-section="formulario" data-value="graduo">Se graduó aquí?</th>
                         </tr>
                         <tr>
-                          <th>Secundaria</th>
+                          <th data-section="formulario" data-value="secundaria">Secundaria</th>
                           <th><input type="text"></th>
                           <th><input type="text"></th>
                           <th><input type="number"></th>
                           <th><input type="checkbox"></th>
                         </tr>
                         <tr>
-                          <th>Universidad</th>
+                          <th data-section="formulario" data-value="universidad">Universidad</th>
                           <th><input type="text"></th>
                           <th><input type="text"></th>
                           <th><input type="number"></th>
                           <th><input type="checkbox"></th>
                         </tr>
                         <tr>
-                          <th>Terciario</th>
-                          <th><input type="text"></th>
-                          <th><input type="text"></th>
-                          <th><input type="number"></th>
-                          <th><input type="checkbox"></th>
-                        </tr>
-                        <tr>
-                          <th>Otro</th>
+                          <th data-section="formulario" data-value="otro">Otro</th>
                           <th><input type="text"></th>
                           <th><input type="text"></th>
                           <th><input type="number"></th>
@@ -142,7 +135,7 @@
                     </table>
                   </div>
                   <div class="formu-group">
-                    <h3>CV</h3>
+                    <h3 data-section="formulario" data-value="c.v.">Curriculum Vitae</h3>
                   </div>
                   <div class="formu-group">
                     <form class="file-upload-form">
@@ -153,16 +146,16 @@
                               d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"
                             ></path>
                           </svg>
-                          <p>Arrastra aquí</p>
-                          <p>o</p>
-                          <span class="browse-button">Buscar archivo</span>
+                          <p data-section="formulario" data-value="arrastra">Arrastre Aquí</p>
+                          <p data-section="formulario" data-value="or">o</p>
+                          <span data-section="formulario" data-value="archivo" class="browse-button">Buscar archivo</span>
                         </div>
                         <input id="file" type="file" required=""/>
                       </label>
                     </form>
                   </div>
                   <div class="formu-group">
-                    <label for="comentario">Déjanos algún comentario a nosotros</label>
+                    <label data-section="formulario" data-value="comentario-empleo" for="comentario">Déjanos algún comentario a nosotros</label>
                     <textarea name="comentario" id="comentario" rows="10" cols="50"></textarea>                      
                     <button data-section="formulario" data-value="subir" class="form-submit-btn" type="submit">subir</button>
                   </div>
