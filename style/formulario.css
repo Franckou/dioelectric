@@ -309,4 +309,11 @@ border-color: #111111;
     .formu-container {
         width: 100%; /* Formularios ocupan el 100% del ancho en pantallas pequeñas */
     }
+    .browse-button {
+        align-items: center;
+        text-align: center;
+    }
+    .file-upload-design{
+        text-align: center;
+    }
 }
