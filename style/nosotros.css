@@ -49,6 +49,17 @@ body{
 .integrantes p{
     font-size: 15px;
 }
+
+.integrantes .cv{
+    text-decoration: none;
+    margin: 20px 0;
+    transition: 0.4s;
+}
+.integrantes .cv:hover{
+    color: aqua;
+}
+
+/* texto equipo */
 .equipo {
     text-align: center;
     margin: 40px;
@@ -80,17 +91,25 @@ body{
     font-size: 40px;
     color: rgb(11, 27, 68);
 }
-.contacto a{
-    color: rgb(0, 42, 150);
-    padding: 30px 0;
+.contacto .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 30px 0;
+    padding: 20px;
     text-decoration: none;
-    font-size: 30px;
     font-family: "Andika", sans-serif;
+    font-size: 30px;
+    color: rgb(0, 42, 150);
     transition: 0.4s;
+    border: 1px solid #333;
+    border-radius: 50px;
 }
 
-.contacto a:hover{
+.contacto .formulario:hover{
     color: rgb(17, 85, 255);
+    background-color: #d7d7d7;
 }
 /* Responsive adjustments */
 @media (max-width: 600px) {
